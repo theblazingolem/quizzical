@@ -1,0 +1,53 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Film",
+            "question": "Who plays the character of Po in the Kung Fu Panda movies?",
+            "correct_answer": "Jack Black",
+            "incorrect_answers": [
+                "Mirana Jonnes",
+                "McConahey Ramses",
+                "Jim Petersson"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Film",
+            "question": "In the Super Mario Bros. Movie (2023), who plays Toad?",
+            "correct_answer": "Keegan-Michael Key",
+            "incorrect_answers": ["Seth Rogan", "Charlie Day", "Jac Black"]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Film",
+            "question": "In the 2012 film, &quot;The Lorax&quot;, who is the antagonist?",
+            "correct_answer": "Aloysius O&#039;Hare",
+            "incorrect_answers": ["Ted Wiggins", "The Once-Ler", "Grammy Norma"]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Film",
+            "question": "Who plays protagonist Ethan Hunt in the &quot;Mission: Impossible&quot; film-series?",
+            "correct_answer": "Tom Cruise",
+            "incorrect_answers": [
+                "Johnny Depp",
+                "Sean Connery",
+                "Pierce Brosnan"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "easy",
+            "category": "Entertainment: Film",
+            "question": "What was the first monster to appear alongside Godzilla?",
+            "correct_answer": "Anguirus",
+            "incorrect_answers": ["King Kong", "Mothra", "King Ghidora"]
+        }
+    ]
+}
