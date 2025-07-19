@@ -1,0 +1,11 @@
+@font-face {
+    font-family: inter;
+    src: url(./assets/inter.ttf);
+}
+body {
+    font-family: inter;
+    background-color: #f5f7fb;
+}
+button {
+    font-family: inherit;
+}

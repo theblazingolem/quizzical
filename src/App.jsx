@@ -32,23 +32,44 @@ function App() {
     function startGame() {
         setGameStart((prev) => !prev);
     }
-
+    const [selectedAnswers, setSelectedAnswers] = useState({});
+    function handleSelect(q, a) {
+        setSelectedAnswers((p) => ({ ...p, [q]: a }));
+    }
+    console.log(selectedAnswers);
+    function submitAnswers() {
+        let rightAns = {};
+        quiz.forEach((x, idx) => {
+            rightAns = { ...rightAns, [idx]: x.correct_answer };
+        });
+        setGameOver((prev) => !prev);
+        console.log("e");
+    }
     return (
         <>
             {!gameStart ? (
-                <div>
+                <div className="startDiv">
                     <h2>Quizzical</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
                     <button onClick={startGame}>Start Game</button>
                 </div>
             ) : null}
             {gameStart ? (
-                <div>
+                <div className="quizDiv">
                     {gameStart &&
                         Array.isArray(quiz) &&
                         quiz.map((question, index) => (
-                            <Question key={index} qObj={question} />
+                            <Question
+                                key={index}
+                                qObj={question}
+                                qNo={index}
+                                handleSelect={handleSelect}
+                                isOver={gameOver}
+                            />
                         ))}
+                    <button onClick={submitAnswers} type="button">
+                        Check Answers
+                    </button>
                 </div>
             ) : null}
         </>

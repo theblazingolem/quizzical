@@ -1,14 +1,26 @@
 body {
     color: #293264;
 }
-
+.question {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2932644d;
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
 input {
     display: none;
+}
+p {
+    font-weight: 600;
+}
+label {
+    font-weight: 500;
 }
 .answers {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
 }
 label {
     border: 1px solid #293264;
@@ -18,4 +30,18 @@ label {
 
 input[type="radio"]:checked + label {
     background-color: #d6dbf5;
+    border: none;
+    padding: 4px 7px;
+}
+
+.right {
+    background-color: #95d7a2;
+    border: none;
+    padding: 4px 7px;
+}
+
+.wrong {
+    background-color: #f7d9db;
+    border: none;
+    padding: 4px 7px;
 }

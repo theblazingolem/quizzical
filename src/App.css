@@ -1,0 +1,24 @@
+.startDiv {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+button {
+    background-color: #4d5b9e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #f5f7fb;
+    display: block;
+    margin: 20px auto 0;
+    font-family: inherit;
+}
+
+.right {
+    background-color: #95d7a2;
+}
+
+.wrong {
+    background-color: #f7d9db;
+}
